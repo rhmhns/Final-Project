@@ -1,0 +1,468 @@
+<html>
+
+<head>
+		<title> Dodol Depok </title>
+		
+		<style>
+			body {
+			font-size: 20;
+			color: black;
+			}
+			p {
+			font-family: Arial; 
+			color: black;
+			}
+			h1 {
+			font-family: FISHfingers; 
+			color: black; 
+			margin: 50px;
+			font-size: 80px;
+			}
+			h2 {
+			font-family: Helvetica; 
+			color: black;
+			}
+			h6 {
+			font-family: Helvetica; 
+			size: 12; 
+			color: black
+			}
+			a {
+			font-family: Helvetica; 
+			size: 12; 
+			text-decoration: none; 
+			color:white;
+			}
+			tr {
+			background-color: #FFEBCD;
+			}
+			#wrap {
+			background:#F5DEB3; 
+			width:1000px;
+			height:3500px; 
+			margin:auto; 
+			overflow:hidden;
+			}
+			#header {
+			background:white;
+			width:1000px;
+			height:300px;
+			}
+			#menu {
+			width:1000px;
+			height:50px;
+			background:#F5DEB3;
+			}
+			#menu ul{
+			padding:0;
+			margin:0;
+			}
+			#menu ul li {
+			display: inline; 
+			margin-left:10px; 
+			line-height:50px; 
+			font-size:20px; 
+			border:1px;
+			padding:10px; 
+			border-radius:10px; 
+			background:#DEB887;
+			}
+			#menu ul li:hover {
+			background:#ffffff;
+			}
+			#menu ul li a {
+			color:#000000;
+			}
+			#content {
+			width:1000px;
+			}
+			.gmbr-slider { 
+			border: 10px solid #FFF8DC; 
+			position: relative; 
+			overflow: hidden; 
+			background: #FFF8DC;
+			margin:20px auto;
+			width: 750px;
+			height: 500px; 
+			}
+			.isi-slider img {
+			width: 750px;
+			height: 500px; 
+			float: left;
+			}
+			.isi-slider {
+			position: absolute; 
+			width:1000px;
+			animation-name:slider;
+			animation-duration:15s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count:infinite;
+			-webkit-animation-name:slider;
+			-webkit-animation-duration:15s;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-iteration-count:infinite;
+			-moz-animation-name:slider;
+			-moz-animation-duration:15s;
+			-moz-animation-timing-function: ease-in-out;
+			-moz-animation-iteration-count:infinite;
+			-o-animation-name: slider;
+			-o-animation-duration:15s;
+			-o-animation-timing-function: ease-in-out;
+			-o-animation-iteration-count:infinite;
+			}
+			.isi-slider:hover { 
+			-webkit-animation-play-state:paused; 
+			-moz-animation-play-state:paused; 
+			-o-animation-play-state:paused; 
+			animation-play-state:paused;
+			}
+			.gmbr-slider:after { 
+			font-size: 150px; 
+			position: absolute; 
+			z-index: 12; 
+			color: rgba(255,255,255, 0); 
+			left: 300px; top: 80px; 
+			-webkit-transition: 1s all ease-in-out; 
+			-moz-transition: 1s all ease-in-out; 
+			transition: 1s all ease-in-out; 
+			}
+			.gmbr-slider:hover:after { 
+			color: rgba(255,255,255, 0.6);  
+			}
+ 
+			@-moz-keyframes slider {     
+			0% {
+			left: 0; opacity: 0; 
+			}     
+			2% {
+			opacity: 1; 
+			}     
+			20% {
+			left: 0; opacity: 1; 
+			}     
+			21% {
+			opacity: 0; 
+			}     
+			24% {
+			opacity: 0; 
+			}     
+			25% {
+			left: -768px; opacity: 1; 
+			}       
+			45% {
+			left: -768px; opacity: 1; 
+			}     
+			46% {
+			opacity: 0; 
+			}     
+			48% {
+			opacity: 0; 
+			}     
+			50% {
+			left: -1536px; opacity: 1; 
+			}     
+			70% {
+			left: -1536px; opacity: 1; 
+			}     
+			72% {
+			opacity: 0; 
+			}     
+			74% {
+			opacity: 0; 
+			}    
+			75% {
+			left: -2304px; opacity: 1; 
+			}   	
+			95% {
+			left: -2304px; opacity: 1; 
+			}   	
+			97% { 
+			left: -2304px; opacity: 0;
+			}   	
+			100% {
+			left: 0; opacity: 0; 
+			}
+			} 
+ 
+			@-webkit-keyframes slider {     
+			0% {
+			left: 0; opacity: 0; 
+			}     
+			2% {
+			opacity: 1; 
+			}     
+			20% {
+			left: 0; opacity: 1; 
+			}     
+			21% {
+			opacity: 0; 
+			}     
+			24% {
+			opacity: 0; 
+			}     
+			25% {
+			left: -768px; opacity: 1; 
+			}       
+			45% {
+			left: -768px; opacity: 1; 
+			}     
+			46% {
+			opacity: 0; 
+			}     
+			48% {
+			opacity: 0; 
+			}     
+			50% {
+			left: -1536px; opacity: 1; 
+			}     
+			70% {
+			left: -1536px; opacity: 1; 
+			}     
+			72% {
+			opacity: 0; 
+			}     
+			74% {
+			opacity: 0; 
+			}    
+			75% {
+			left: -2304px; opacity: 1; 
+			}   	
+			95% {
+			left: -2304px; opacity: 1; 
+			}   	
+			97% { 
+			left: -2304px; opacity: 0;
+			}   	
+			100% {
+			left: 0; opacity: 0; 
+			}
+			} 
+ 
+			@keyframes slider {     
+			0% {
+			left: 0; opacity: 0; 
+			}     
+			2% {
+			opacity: 1; 
+			}     
+			20% {
+			left: 0; opacity: 1; 
+			}     
+			21% {
+			opacity: 0; 
+			}     
+			24% {
+			opacity: 0; 
+			}     
+			25% {
+			left: -768px; opacity: 1; 
+			}     
+			45% {
+			left: -768px; opacity: 1; 
+			}     
+			46% {
+			opacity: 0; 
+			}     
+			48% {
+			opacity: 0; 
+			}     
+			50% {
+			left: -1536px; opacity: 1; 
+			}     
+			70% {
+			left: -1536px; opacity: 1; 
+			}     
+			72% {
+			opacity: 0; 
+			}     
+			74% {
+			opacity: 0; 
+			}    
+			75% {
+			left: -2304px; opacity: 1; 
+			}   	
+			95% {
+			left: -2304px; opacity: 1; 
+			}   	
+			97% { 
+			left: -2304px; opacity: 0; 
+			} 
+ 
+			100% {
+			left: 0; opacity: 0; 
+			}
+			}
+		</style>
+	</head>
+
+<body background="koceng.jpg" style="background-attachment:fixed;">
+	<div id="wrap">
+		<div id="header">
+			<img src="header2.jpg" width=1000 height=300>
+		</div>
+		
+		<h1 align="center">DODOL DEPOK H.NIIH</h1>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html#ttg">Tentang</a></li>
+				<li><a href="index.html#sjr">Sejarah</a></li>
+				<li><a href="index.html#pmsn">Produk</a></li>
+				<li><a href="index.html#kontak">Kontak</a></li>
+			</ul>
+		</div>
+		
+		<div id="ttg">
+			<hr> <h2 align="center"> Tentang </h2> <hr>
+				
+			<fieldset>
+				<p> </p>
+				<!-- Disini tampilkan slider image -->
+				<div class=gmbr-slider>
+					<div class=isi-slider>
+						<img src="a.jpg" alt="Gambar 1">
+						<img src="b.jpg" alt="Gambar 2">
+						<img src="c.jpg" alt="Gambar 3">
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		
+		<div id="sjr">
+			<hr> <h2 align="center"> Sejarah </h2> <hr>
+			
+			<fieldset>
+				<p> </p>
+			</fieldset>
+		</div>
+		
+		<div id="pmsn">
+				<hr> <h2 align="center"> Produk </h2> <hr>
+				
+				<fieldset>
+				
+					<p> Berikut daftar harga Dodol Depok H Niih </p>
+						
+						<table border="1px" bgcolor="#FFDEAD" cellpadding="10" cellspacing="15" align="left">
+							<tr>
+								<td width="200" height="10">
+									<p> Jenis dodol </p>
+								</td>
+								
+								<td width="100" height="10">
+									<p> Ukuran </p>
+								</td>
+								
+								<td width="100" height="10">
+									<p> Harga </p>
+								</td>
+							</tr>
+							
+							<tr>
+								<th rowspan="4">
+									<p> Dodol Original </p>
+								</th>
+								
+								<td width="100">
+									<p> 250 gram </p>
+								</td>
+								
+								<td width="100">
+									<p> Rp.18.000 </p>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p> 500 gram </p>
+								</td>
+								
+								<td>
+									<p> Rp.35.000 </p>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p> 1000 gram </p>
+								</td>
+							
+								<td>
+									<p> Rp.70.000 </p>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<p> 1500 gram </p>
+								</td>
+								
+								<td>
+									<p> Rp.100.000 </p>
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									<p> Kue Cina </p>
+								</th>
+								
+								<td>
+									<p> 1000 gram </p>
+								</td>
+								
+								<td>
+									<p> Rp.55.000 </p>
+								</td>
+							</tr>
+							
+						</table>
+						
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						
+						<p style="margin: 25px;">
+						Selain menjual Dodol Depok, H. Niih dan istrinya juga menjual macam-macam kue khas betawi.<br>
+						Diantaranya: Tape Uli, Kue Cincin, Kue Wajik, Kue Bugis dan Geplak.
+						</p>
+						<p style="margin: 25px;">
+						Nah, untuk pemesanan dan pertanyaan bisa isi form ini ya!
+						<p>
+							<fieldset>										
+								<form name="pemesanan" method="post" action="https://formspree.io/srahmahnur3@gmail.com">
+									<p> Nama	: </p> <input type="text" name="nama"> <br>
+									<p> E-mail	: </p> <input type="email" name="_replyto"> <br>
+									<p> Pertanyaan	: </p>
+									<textarea name="pertanyaan" cols="22" rows="7"> </textarea>
+									<br>
+									<input type="submit" value="Send">
+								</form>
+							</fieldset>
+
+				</fieldset>
+		</div>
+		
+		<div id="kontak">
+			<hr> <h2 align="center"> Kontak </h2> <hr>
+				<fieldset>
+					<p style="margin: 25px;"> Mau hubungi kami secara langsung? Boleh kok!<br>
+					Berikut adalah alamat dan sosial media kami!</p>
+					<fieldset>
+						<img src="rumah.png" width="50" height="50";>
+							<p> Jalan H Amil Ali No.72 <br>
+							Kel. Abadijaya Kec. Sukmajaya <br>
+							Kota Depok, Jawa Barat 16471 </p> <br>
+						<img src="tel.png" width="50" height="50";>
+							<p> 021-7711083 </p> <br>
+						<img src="mail.png" width="50" height="50";>
+							<p> Srahmahnur3@gmail.com </p> <br>
+						<img src="instagram.png" width="50" height="50";>
+							<p> @dodoldepok </p>
+					</fieldset>
+				</fieldset>
+		</div>
+		<hr>
+	</div>
+</body>
+
+</head>
+
+</html>
